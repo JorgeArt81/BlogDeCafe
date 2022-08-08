@@ -1,0 +1,28 @@
+@use "colors";
+@use "typography";
+
+:root {
+    --paper-color: #{colors.$paper};
+    --font-color: #{colors.$font};
+    --nav-bg-color: #{colors.$bg-nav};
+    --nav-font-color: #{colors.$bg-nav};
+    /* Fonts
+     =================================================================================== */
+    --font-family-1:#{typography.$f-family1};
+    --font-family-2:#{typography.$f-family2};
+    --font-family-3:#{typography.$f-family3};
+    --fw-lighter:#{typography.$font-weight-lighter};
+    --fw-light:#{typography.$font-weight-light};
+    --fw-normal:#{typography.$font-weight-normal};
+    --fw-bold:#{typography.$font-weight-bold};
+    --fw-bolder:#{typography.$font-weight-bolder};
+    --fz-1:#{typography.$h1-font-size};
+    --fz-2:#{typography.$h2-font-size};
+    --fz-3:#{typography.$h3-font-size};
+    --fz-4:#{typography.$h4-font-size};
+    --fz-5:#{typography.$h5-font-size};
+    --fz-6:#{typography.$h6-font-size};
+    --line-height-base:#{typography.$line-height-base};
+    --line-height-sm:#{typography.$line-height-sm};
+    --line-height-lg:#{typography.$line-height-lg};
+}

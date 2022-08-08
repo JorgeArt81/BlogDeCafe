@@ -1,0 +1,74 @@
+@use "mixins" as m;
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 85%;
+  // font-size: 62.5%; // 1rem = 10px
+  @include m.medium {
+    font-size: 100%;
+  }
+
+}
+
+body {
+  min-height: 100%;
+  font-family: var(--font-family-1);
+
+  @include m.medium {
+    height: 100%;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Remove chrome autofill color from inputs
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000000s ease-in-out 0s;
+}
+
+h1,
+h2,
+h3 {
+  // margin: 0 0 calc(v.$separacion / 2) 0;
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--fz-1);
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  font-size: var(--fz-2);
+}
+
+h3 {
+  font-size: var(--fz-3);
+}
+
+p {
+  font-size: var(--fz-5);
+}
