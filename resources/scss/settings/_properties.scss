@@ -2,15 +2,23 @@
 @use "typography";
 
 :root {
+    --primary-color: #{colors.$primary};
+    --white-color: #{colors.$white};
+    --black-color: #{colors.$black-10};
+    --black-paper-1-color: #{colors.$black-paper-1};
+    --black-paper-2-color: #{colors.$black-paper-2};
+    --black-paper-3-color: #{colors.$black-paper-3};
+    --black-paper-4-color: #{colors.$black-paper-4};
+    --black-paper-5-color: #{colors.$black-paper-5};
     --paper-color: #{colors.$paper};
     --font-color: #{colors.$font};
     --nav-bg-color: #{colors.$bg-nav};
     --nav-font-color: #{colors.$bg-nav};
+    --border-color-article: #{colors.$border-color-article};
     /* Fonts
      =================================================================================== */
     --font-family-1:#{typography.$f-family1};
     --font-family-2:#{typography.$f-family2};
-    --font-family-3:#{typography.$f-family3};
     --fw-lighter:#{typography.$font-weight-lighter};
     --fw-light:#{typography.$font-weight-light};
     --fw-normal:#{typography.$font-weight-normal};

@@ -45,24 +45,23 @@
 
 /* Buttons
  =================================================================================== */
-@mixin boton($bgColor, $colorTexto) {
+@mixin button($bgColor, $textColor) {
     background-color: $bgColor;
-    padding: 1.5rem 4rem;
-    color: $colorTexto;
-    margin-top: 2rem;
-    font-size: 2rem;
-    font-weight: 400;
-    display: inline-block;
-    font-weight: 700;
+    border-radius: 6px;
     border: none;
-    transition-property: background-color;
-    transition-duration: .3s;
-    text-align: center;
+    color: $textColor;
     display: block;
+    display: inline-block;
+    font-size: var(--fz-6);
+    font-weight: var(--fw-bold);
+    margin-top: 20px;
+    padding: 15px 40px;
+    text-align: center;
+    transition-duration: .3s;
+    transition-property: background-color;
     width: 100%;
-    margin: 5rem 0;
 
-    @include tablet {
+    @include medium() {
         width: auto;
     }
 

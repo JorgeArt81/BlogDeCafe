@@ -17,9 +17,43 @@ $_shadow-3-color: rgba(0, 0, 0, 0.2);
 $_nav-primary: #353535;
 $_nav-icon: #8ccee1;
 
+/* Color Theme Swatches in Hex */
+$_Sheet-of-black-paper-texture-background-1-hex: #0C0C0D;
+$_Sheet-of-black-paper-texture-background-2-hex: #252526;
+$_Sheet-of-black-paper-texture-background-3-hex: #3E3E40;
+$_Sheet-of-black-paper-texture-background-4-hex: #A6A6A6;
+$_Sheet-of-black-paper-texture-background-5-hex: #737373;
+
+/* Color Theme Swatches in RGBA */
+$_Sheet-of-black-paper-texture-background-1-rgba: rgba(11, 11, 12, 1);
+$_Sheet-of-black-paper-texture-background-2-rgba: rgba(36, 36, 38, 1);
+$_Sheet-of-black-paper-texture-background-3-rgba: rgba(61, 61, 63, 1);
+$_Sheet-of-black-paper-texture-background-4-rgba: rgba(165, 165, 165, 1);
+$_Sheet-of-black-paper-texture-background-5-rgba: rgba(114, 114, 114, 1);
+
+/* Color Theme Swatches in HSLA */
+$_Sheet-of-black-paper-texture-background-1-hsla: hsla(236, 4, 4, 1);
+$_Sheet-of-black-paper-texture-background-2-hsla: hsla(236, 2, 14, 1);
+$_Sheet-of-black-paper-texture-background-3-hsla: hsla(236, 1, 24, 1);
+$_Sheet-of-black-paper-texture-background-4-hsla: hsla(0, 0, 65, 1);
+$_Sheet-of-black-paper-texture-background-5-hsla: hsla(0, 0, 45, 1);
+
+
 /* root parameters
  =================================================================================== */
+$primary: #784D3C;
+$white: #ffffff;
+$black-10: #000000;
+$black-9: #1a1b15;
 $paper: $_white;
 $font: $_negro;
+$border-color-article: $_gris;
+
 $bg-nav : #353535;
 $font-nav : $_white;
+
+$black-paper-1: $_Sheet-of-black-paper-texture-background-1-hex;
+$black-paper-2: $_Sheet-of-black-paper-texture-background-2-hex;
+$black-paper-3: $_Sheet-of-black-paper-texture-background-3-hex;
+$black-paper-4: $_Sheet-of-black-paper-texture-background-4-hex;
+$black-paper-5: $_Sheet-of-black-paper-texture-background-5-hex;

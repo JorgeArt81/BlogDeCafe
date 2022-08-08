@@ -4,16 +4,18 @@ html {
   box-sizing: border-box;
   height: 100%;
   font-size: 85%;
+
   // font-size: 62.5%; // 1rem = 10px
   @include m.medium {
     font-size: 100%;
+    // background-color: purple;
   }
 
 }
 
 body {
   min-height: 100%;
-  font-family: var(--font-family-1);
+  font-family: var(--font-family-2);
 
   @include m.medium {
     height: 100%;
@@ -28,6 +30,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
@@ -51,8 +54,9 @@ input:-webkit-autofill:active {
 h1,
 h2,
 h3 {
-  // margin: 0 0 calc(v.$separacion / 2) 0;
+  font-family: var(--font-family-1);
   font-weight: var(--fw-bold);
+  margin: 0;
   text-align: center;
 }
 
@@ -69,6 +73,18 @@ h3 {
   font-size: var(--fz-3);
 }
 
-p {
+h4 {
+  font-family: var(--font-family-1);
+  font-size: var(--fz-4);
+  margin: 1rem 0;
+}
+
+h5 {
+  font-family: var(--font-family-1);
   font-size: var(--fz-5);
+  margin: 1rem 0;
+}
+
+p {
+  font-size: var(--fz-6);
 }

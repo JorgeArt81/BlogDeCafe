@@ -3,7 +3,11 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --breakpoint-xxl: 1400px;
+  --breakpoint-xxl: 1440px;
+  --nav-heigth: 128px;
+  --nav-heigth-sm: 200px;
+  --footer-heigth: 108px;
+  --header-heigth: 600px;
 }
 
 $grid-columns: 12;
@@ -14,7 +18,7 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
-$breakpoint-xxl: 1400px;
+$breakpoint-xxl: 1440px;
 
 
 $grid-breakpoints: (
@@ -23,7 +27,8 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1440px,
+  fhd:1920px,
 );
 
 $container-max-widths: (
@@ -33,3 +38,13 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px
 );
+
+/* Container Class
+ =================================================================================== */
+html {
+  .base-container {
+    max-width: var(--breakpoint-xxl);
+    width: 90%;
+    margin: 0 auto;
+  }
+}

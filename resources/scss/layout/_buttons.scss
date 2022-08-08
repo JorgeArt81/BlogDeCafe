@@ -1,0 +1,45 @@
+@use "../settings/mixins" as mix;
+@use "../settings/colors" as color;
+
+
+.btn-link {
+    background-color: color.$black-paper-2;
+    border-radius: 5px;
+    border: none;
+    color: color.$white;
+    display: block;
+    display: inline-block;
+    font-size: 90%;
+    font-weight: var(--fw-bold);
+    margin-top: 20px;
+    padding: 14px 28px;
+    text-align: center;
+    transition-duration: .3s;
+    transition-property: background-color;
+    width: 100%;
+    text-transform: uppercase;
+
+    @include mix.medium() {
+        width: auto;
+    }
+
+    &:hover {
+        background-color: darken(color.$black-paper-2, 10%);
+        cursor: pointer;
+    }
+
+    &.brown {
+        background-color: color.$primary;
+
+        &:hover {
+            background-color: darken(color.$primary, 10%);
+        }
+    }
+
+    &.sm {
+        font-size: 80%;
+        font-weight: var(--fw-bold);
+        margin-top: 8px;
+        padding: 12px 20px;
+    }
+}

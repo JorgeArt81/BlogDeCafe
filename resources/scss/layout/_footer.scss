@@ -1,0 +1,60 @@
+@use "../settings/mixins" as m;
+
+
+.footer {
+    align-items: center;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    position: relative;
+
+    @include m.medium {
+        align-items: center;
+        flex-direction: row;
+        height: var(--footer-heigth);
+        justify-content: space-between;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+
+        @include m.medium {
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .nav__menu {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+
+        @include m.medium {
+            justify-content: space-between;
+            flex-direction: row;
+            margin-top: 0;
+        }
+    }
+
+    .nav__link {
+        padding: 8px;
+        font-size: 1.1rem;
+    }
+}
+
+.logo {
+    color: var(--white-color);
+
+    .logo__name {
+        font-weight: var(--fw-normal);
+    }
+
+    .logo__bold {
+        font-weight: var(--fw-bold);
+    }
+}
