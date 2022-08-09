@@ -8,7 +8,7 @@
             exercitationem animi at
             quo et consectetur pariatur error molestiae, odit vero rem, quia numquam rerum iure quasi.
             Dicta, excepturi culpa.</p>
-        <x-link class="btn-link">{{ __('Leer Entrada') }}</x-link>
+        <x-link : href="{{ route('entrada.index') }}" class="btn-link">{{ __('Leer Entrada') }}</x-link>
     </div>
 </div>
 <div class="article-container">
@@ -21,7 +21,7 @@
             exercitationem animi at
             quo et consectetur pariatur error molestiae, odit vero rem, quia numquam rerum iure quasi.
             Dicta, excepturi culpa.</p>
-        <x-link class="btn-link">{{ __('Leer Entrada') }}</x-link>
+        <x-link : href="{{ route('entrada.index') }}" class="btn-link">{{ __('Leer Entrada') }}</x-link>
     </div>
 </div>
 <div class="article-container">
@@ -34,6 +34,6 @@
             exercitationem animi at
             quo et consectetur pariatur error molestiae, odit vero rem, quia numquam rerum iure quasi.
             Dicta, excepturi culpa.</p>
-        <x-link class="btn-link">{{ __('Leer Entrada') }}</x-link>
+        <x-link : href="{{ route('entrada.index') }}"  class="btn-link">{{ __('Leer Entrada') }}</x-link>
     </div>
 </div>

@@ -8,7 +8,7 @@
     background-size: cover;
     height: var(--header-heigth);
     position: relative;
-    
+
     @include m.medium {
         display: flex;
         justify-content: center;
@@ -26,6 +26,15 @@
 
     @include m.medium {
         height: 100%;
+
+        .header__phrase {
+            font-size: 2.1rem;
+        }
+
+        .header__message {
+            font-size: 1.1rem;
+            margin: .5rem 0;
+        }
     }
 }
 
@@ -60,6 +69,16 @@
     .nav__link {
         font-size: 1.1rem;
         padding: 8px;
+        color: var(--white-color);
+        transition: all 0.1s linear;
+        
+        &:hover {
+            border-bottom: 2px solid var(--white-color);
+        }
+        
+        &.active {
+            font-weight: var(--fw-bold);
+        }
     }
 }
 

@@ -6,18 +6,19 @@
 
     {{-- Main
     =================================================================================== --}}
-    <main class="blog">
-        <section>
-            <h3>Nuestro Blog</h3>
-            <article class="article">
-                <livewire:mostrar-articles>
-            </article>
-        </section>
-    </main>
-    <aside class="sidebar">
-        <h3>Nuestro Cursos y Talleres</h3>
-        <livewire:widget-cursos>
-    </aside>
-    {{-- ========== end main ========== --}}
-
+    <div class="page-content blog base-container">
+        <main>
+            <section>
+                <h3>Nuestro Blog</h3>
+                <article class="article">
+                    <livewire:mostrar-articles>
+                </article>
+            </section>
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestro Cursos y Talleres</h3>
+            <livewire:widget-cursos>
+        </aside>
+        {{-- ========== end main ========== --}}
+    </div>
 </x-app-layout>

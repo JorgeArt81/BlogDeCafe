@@ -23,9 +23,7 @@
     @endif
 
     <!-- Page Content -->
-    <div class="page-content base-container">
         {{ $slot }}
-    </div>
 
     <!-- Page Navbar -->
     @include('layouts.footer')

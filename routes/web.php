@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\CursosController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NosotrosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', HomeController::class)->name('home.index');
+Route::get('/nosotros', [NosotrosController::class, 'index'])->name('nosotros.index');
+Route::get('/cursos', [CursosController::class, 'index'])->name('cursos.index');
+Route::get('/entrada', [ArticleController::class, 'index'])->name('entrada.index');
+Route::get('/contacto', [ContactoController::class, 'index'])->name('contacto.index');
